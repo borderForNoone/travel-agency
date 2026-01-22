@@ -1,4 +1,4 @@
-package com.epam.finaltask.security.jwt;
+package com.epam.finaltask.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

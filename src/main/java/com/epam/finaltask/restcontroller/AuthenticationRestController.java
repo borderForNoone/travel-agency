@@ -2,7 +2,7 @@ package com.epam.finaltask.restcontroller;
 
 import com.epam.finaltask.dto.AuthRequest;
 import com.epam.finaltask.dto.AuthResponse;
-import com.epam.finaltask.security.jwt.JWTUtil;
+import com.epam.finaltask.jwt.JWTUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

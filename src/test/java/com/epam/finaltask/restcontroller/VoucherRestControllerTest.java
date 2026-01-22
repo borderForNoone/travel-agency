@@ -50,7 +50,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureDataJpa
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = false)
 @AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
 @TestPropertySource(properties = "spring.jpa.database-platform=org.hibernate.dialect.H2Dialect")
 public class VoucherRestControllerTest {

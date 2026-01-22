@@ -4,11 +4,11 @@ import lombok.Getter;
 
 @Getter
 public class CustomEntityNotFoundException extends RuntimeException {
-    private final String code;
+    private final String errorCode;
 
-    public CustomEntityNotFoundException(String message, String code) {
+    public CustomEntityNotFoundException(String message, String errorCode) {
         super(message);
-        this.code = code;
+        this.errorCode = errorCode;
     }
 
 }
