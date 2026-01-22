@@ -101,6 +101,14 @@ public class VoucherServiceImpl implements VoucherService {
     }
 
     @Override
+    public VoucherDTO changeStatus(String id, String status) {
+        Voucher voucher = findVoucherById(id);
+        voucher.setStatus(VoucherStatus.valueOf(status));
+        Voucher savedVoucher = voucherRepository.save(voucher);
+        return voucherMapper.toVoucherDTO(savedVoucher);
+    }
+
+    @Override
     public List<VoucherDTO> findAllByUserId(String userId) {
         return voucherRepository.findAllByUserId(UUID.fromString(userId))
                 .stream()
