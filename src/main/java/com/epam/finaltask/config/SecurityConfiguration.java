@@ -115,6 +115,7 @@ public class SecurityConfiguration {
         hierarchy.setHierarchy(
                 "ROLE_ADMIN > ROLE_MANAGER \n ROLE_MANAGER > ROLE_USER"
         );
+
         return hierarchy;
     }
 
