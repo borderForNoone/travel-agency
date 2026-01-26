@@ -1,4 +1,4 @@
-package com.epam.finaltask.restcontroller;
+package com.epam.finaltask.controller.rest;
 
 import com.epam.finaltask.dto.AuthRequest;
 import com.epam.finaltask.dto.AuthResponse;
